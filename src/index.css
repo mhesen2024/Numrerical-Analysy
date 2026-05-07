@@ -3,6 +3,10 @@
 :root {
   color: #0f172a;
   background-color: #f4f8ff;
+  /* تحديد أحجام الخط الديناميكية */
+  --base-font-size: clamp(14px, 2vw, 16px);
+  --heading-lg: clamp(28px, 7vw, 48px);
+  --heading-md: clamp(22px, 5vw, 32px);
 }
 
 * {
@@ -12,4 +16,32 @@
 body {
   margin: 0;
   min-height: 100vh;
+  font-size: var(--base-font-size);
+  overflow-x: hidden;
+}
+
+/* تحسينات responsive للشاشات الصغيرة جداً */
+@media (max-width: 360px) {
+  body {
+    --base-font-size: 12px;
+  }
+}
+
+/* تحسينات إضافية للأجهزة اللوحية والأجهزة الكبيرة */
+@media (min-width: 768px) {
+  body {
+    --base-font-size: 15px;
+  }
+}
+
+/* تحسين الـ inputs على الأجهزة المحمولة */
+@media (max-height: 600px) {
+  body {
+    --base-font-size: 13px;
+  }
+  
+  input[type="number"],
+  button {
+    font-size: 14px;
+  }
 }

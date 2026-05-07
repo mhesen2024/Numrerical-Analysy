@@ -89,14 +89,14 @@ export default function InterpolationWorkspace() {
   }
 
   return (
-    <section className="relative min-h-screen bg-slate-50 px-4 pb-12 pt-8 text-slate-900 sm:pt-10">
+    <section className="relative min-h-screen w-full bg-slate-50 px-3 pb-8 pt-6 text-slate-900 sm:px-4 sm:pb-12 sm:pt-8 md:px-6 lg:pt-10">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(14,165,233,0.25),transparent_38%),radial-gradient(circle_at_85%_25%,rgba(59,130,246,0.22),transparent_35%),radial-gradient(circle_at_70%_85%,rgba(16,185,129,0.14),transparent_35%)]" />
 
-      <div className="relative z-10 mx-auto w-full max-w-6xl">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-1 sm:px-2">
         <WorkspaceHeader />
 
-        <div className="grid items-start gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="grid gap-4">
+        <div className="grid items-start gap-3 sm:gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="grid gap-3 sm:gap-4">
             <PointsTable
               size={size}
               targetX={targetX}

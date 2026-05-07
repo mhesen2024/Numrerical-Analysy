@@ -3,9 +3,11 @@ import { FiInfo } from "react-icons/fi";
 export default function LogicExplanation() {
   return (
     <details className="group relative ">
-      <summary className="flex cursor-pointer list-none items-center gap-2 rounded-xl border border-sky-200 bg-white px-3 py-2 text-sm font-semibold text-sky-700 shadow-sm transition hover:bg-sky-50">
-        <FiInfo className="text-base" />
-      </summary>
+  <summary className="shrink-0 flex cursor-pointer
+   list-none items-center gap-2 rounded-xl border border-sky-200 bg-white px-3 py-2 text-sm
+   font-semibold text-sky-700 shadow-sm transition hover:bg-sky-50 w-10 h-10">
+  <FiInfo className="" />
+</summary>
 
       <div
         dir="rtl"
